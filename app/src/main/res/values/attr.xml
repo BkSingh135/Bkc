@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="cs_CircularSeekBar">
+        <attr name="cs_circle_style">
+            <enum name="butt" value="0" />
+            <enum name="round" value="1" />
+            <enum name="square" value="2" />
+        </attr>
+        <attr name="cs_progress" format="integer" />
+        <attr name="cs_max" format="integer" />
+        <attr name="cs_negative_enabled" format="boolean" />
+        <attr name="cs_move_outside_circle" format="boolean" />
+        <attr name="cs_maintain_equal_circle" format="boolean" />
+        <attr name="cs_use_custom_radii" format="boolean" />
+        <attr name="cs_lock_enabled" format="boolean" />
+        <attr name="cs_circle_x_radius" format="dimension" />
+        <attr name="cs_circle_y_radius" format="dimension" />
+        <attr name="cs_circle_stroke_width" format="dimension" />
+        <attr name="cs_disable_pointer" format="boolean" />
+        <attr name="cs_pointer_stroke_width" format="dimension" />
+        <attr name="cs_pointer_halo_width" format="dimension" />
+        <attr name="cs_pointer_halo_border_width" format="dimension" />
+        <attr name="cs_circle_fill" format="color" />
+        <attr name="cs_circle_color" format="color" />
+        <attr name="cs_circle_progress_color" format="color" />
+        <attr name="cs_pointer_color" format="color" />
+        <attr name="cs_pointer_halo_color" format="color" />
+        <attr name="cs_pointer_halo_color_ontouch" format="color" />
+        <attr name="cs_pointer_alpha_ontouch" format="integer" />
+        <attr name="cs_pointer_angle" format="float" />
+        <attr name="cs_start_angle" format="float" />
+        <attr name="cs_end_angle" format="float" />
+        <attr name="cs_disable_progress_glow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ZoomEngine">
+        <attr name="hasClickableChildren" format="boolean" />
+        <attr name="overScrollHorizontal" format="boolean" />
+        <attr name="overScrollVertical" format="boolean" />
+        <attr name="overPinchable" format="boolean" />
+        <attr name="zoomEnabled" format="boolean" />
+        <attr name="verticalPanEnabled" format="boolean" />
+        <attr name="horizontalPanEnabled" format="boolean" />
+        <attr name="minZoom" format="float" />
+        <attr name="maxZoom" format="float" />
+        <attr name="minZoomType" format="enum">
+            <enum name="zoom" value="0" />
+            <enum name="realZoom" value="1" />
+        </attr>
+        <attr name="maxZoomType" format="enum">
+            <enum name="zoom" value="0" />
+            <enum name="realZoom" value="1" />
+        </attr>
+        <attr name="transformation" format="enum">
+            <enum name="centerInside" value="0" />
+            <enum name="centerCrop" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="transformationGravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="center" value="0x11" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalMarqueeTextView">
+        <attr name="autoStartMarquee" format="boolean" />
+        <attr name="marqueeSpeed" format="reference|integer" />
+        <attr name="text" format="reference|string" />
+        <attr name="textSize" format="reference|dimension" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textAppearance" format="reference" />
+        <attr name="textStyle">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+        </attr>
+        <attr name="typeface">
+            <enum name="normal" value="0" />
+            <enum name="sans" value="1" />
+            <enum name="serif" value="2" />
+            <enum name="monospace" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TextClock">
+        <!-- Specifies the formatting pattern used to show the time and/or date
+             in 24-hour mode. Please refer to {@link android.text.format.DateFormat}
+             for a complete description of accepted formatting patterns.
+             The default pattern is a locale-appropriate equivalent of "H:mm". -->
+        <attr name="format24Hour" format="boolean" />
+
+        <!-- Show seconds into datetime  -->
+        <attr name="showSecond" format="boolean" />
+
+        <!-- Text color for view. -->
+        <attr name="color" format="color" />
+
+        <!-- Show UTC into datetime  -->
+        <attr name="showUTC" format="boolean" />
+
+        <!-- Show UTC into datetime  -->
+        <attr name="format" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeView">
+        <attr name="speed" format="dimension" />
+        <attr name="text_size" format="dimension" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="txt_spacing" format="dimension" />
+        <attr name="txt_radius" format="float" />
+        <attr name="txt_dx" format="float" />
+        <attr name="txt_dy" format="float" />
+        <attr name="text_shadowColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="Toggle">
+
+        <attr name="textOn" format="string" />
+
+        <attr name="textOff" format="string" />
+
+        <attr name="colorOff" format="color" />
+
+        <attr name="colorOn" format="color" />
+
+        <attr name="colorBorder" format="color" />
+
+        <attr name="colorDisabled" format="color" />
+
+        <attr name="on" format="boolean" />
+
+        <attr name="android:textSize" />
+
+        <attr name="android:enabled" />
+    </declare-styleable>
+
+</resources>

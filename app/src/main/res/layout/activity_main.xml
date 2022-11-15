@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_30sdp"
+        android:text="Ch : 1"
+        android:lines="1"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:background="@drawable/curve_bg"
+        android:id="@+id/chID"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="match_parent"
+        android:id="@+id/miniRv"
+        tools:itemCount="10"
+         android:orientation="vertical"
+        android:elevation="@dimen/_20sdp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/mini_rv_layout"
+        />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:id="@+id/viewPager" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--Image Of Fasal Salah Logo-->
+
+    <RelativeLayout
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/circle_bg">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@null"
+            app:srcCompat="@drawable/fasal" />
+
+    </RelativeLayout>
+
+    <!--Marquee Text Of Metar Data-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/side_cut_bg"
+        android:gravity="center"
+        android:elevation="@dimen/_minus18sdp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <!--#70000000-->
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/marqueeTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:background="@drawable/side_cut_bg"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="@dimen/_50sdp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/dummy_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+
+
+        <TextClock
+            android:id="@+id/textClock"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:format12Hour="hh:mm:ss a"
+
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp" />
+        <!-- android:text="22:34:45 PM"-->
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

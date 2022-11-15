@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_25sdp"
+    android:layout_height="@dimen/_25sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="#FFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/constraint">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/Ll">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView"
+                android:layout_marginBottom="@dimen/_9sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="fitXY"/>
+<!--  app:srcCompat="@drawable/bg"-->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_9sdp"
+            android:background="#F9F9F9"
+
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:lines="1"
+                android:text="@string/dummy_text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8ssp" />
+            <!--   android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"-->
+            <!--
+                    <TextClock
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textClock"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12ssp"
+
+                        android:gravity="center"
+                        android:format12Hour="hh:mm:ss a"
+                        android:layout_alignParentEnd="true"/>
+            -->
+            <!-- android:text="22:34:45 PM"-->
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

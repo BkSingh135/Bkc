@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFF"
+    tools:context=".FullScreenFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/Ll">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv"
+            app:srcCompat="@drawable/bg"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="centerCrop"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#F9F9F9"
+
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_15ssp"
+            android:text="@string/dummy_text"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textColor="@color/black" />
+        <TextClock
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:id="@+id/textClock"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+
+            android:gravity="center"
+            android:format12Hour="hh:mm:ss a"
+            android:layout_alignParentEnd="true"/>
+        <!-- android:text="22:34:45 PM"-->
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
